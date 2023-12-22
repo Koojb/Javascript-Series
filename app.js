@@ -26,12 +26,15 @@ const smoothScroll = (target, duration) => {
     requestAnimationFrame(animation);
 }
 
+const home = document.querySelector('.logo');
 const aboutSection = document.querySelector('.to-about'); 
 const projectsSection = document.querySelector('.to-projects'); 
 const contactSection = document.querySelector('.to-contact'); 
 const resumeSection = document.querySelector('.to-resume');
 
-
+home.addEventListener('click', function(){
+    smoothScroll('.home', 500);
+});
 
 aboutSection.addEventListener('click', function(){
     smoothScroll('.about-section', 500);
